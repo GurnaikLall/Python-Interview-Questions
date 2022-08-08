@@ -1,0 +1,4 @@
+- figure out how to split the strings to iterate through
+- calculate the weights for each one and record it somewhere
+- needs to relate to the orginal number
+- return a string
