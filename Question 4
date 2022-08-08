@@ -1,0 +1,31 @@
+Solution 1:
+def dna_complement(dna):
+  a = list(dna)
+  for i in range(len(dna)):
+    #print(a)
+    if (a[i]=='C'):
+      a[i] ='G'
+    elif (a[i]=='G'):
+      a[i]='C'
+    elif (a[i]=='T'):
+      a[i]='A'
+    elif (a[i]=='A'):
+      a[i]='T'
+    else:
+      print('Invalid')
+      
+  #change list back to string
+  return a
+    
+dna_complement('GATC')
+
+Solution 2:
+def dna_compliment(dna):
+    mapping = {'G':'C', 'C':'G', 'T':'A', 'A':'T'}
+    dna2 = ''
+    capital_dna = dna.upper()
+    for char in capital_dna:
+        dna2 += mapping[char]
+    return dna2
+ 
+dna_compliment('C')
