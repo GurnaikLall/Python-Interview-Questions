@@ -1,0 +1,10 @@
+def withdraw(amount):
+    result = [0,0,0] #Initial Empty List
+    result[0] = amount//100 #floor division will round down the answer
+    amount -= result[0]*100
+    result[1] = amount//50
+    amount -= result[1]*50
+    result[2] = amount//20
+    return result
+
+withdraw(530)
